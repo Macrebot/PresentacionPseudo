@@ -51,6 +51,10 @@ img {
     border-radius: 20px;
 }
 
+.final {
+    margin-bottom: 7%;
+}
+
 /* Estilo de un enlace cuando no ha sido utilizado */
 .ejemploLink:link {
     color: #0c9351;
