@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06296b;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#content {
+    background-color: #1a3c7d;
+    padding: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+
+section {
+    margin-top: 7%;
+    width: 80%;
+    background-color: #05183c;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+div {
+    margin-top: 5%;
+}
+
+a {
+    font-size: large;
+}
+
+.contenido {
+    text-align: center;
+}
+
+img {
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Estilo de un enlace cuando no ha sido utilizado */
+.ejemploLink:link {
+    color: #0c9351;
+}
+
+/* Estilo de un enlace cuando ya ha sido utilizado */
+.ejemploVisited:visited {
+    color: #417cea;
+}
+
+/* Estilo de un enlace cuando está siendo presionado */
+.ejemploActive:active {
+    color: #60d4ea;
+}
+
+/* Estilo de un enlace seleccionado */
+.ejemploFocus:focus {
+    color: #c92129;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: #4dc243;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+
+/* Estilo de un enlace cuando tiene el ratón encima */
+.ejemploHover:hover {
+    color: #60d4ea;
+    background-color: #417cea;
+}
+
+/* En funcion del idioma en que esté, tendrá una configuración de estilos u otra */
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; } /* Inglés */
+:lang(fr) > q { quotes: '« ' ' »'; }                       /* Francés */
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }         /* Alemán */
+
+/* Estilos de ejemplo para :target */
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before { /* Agrega un elemento antes de éste */
+  font: 70% sans-serif;
+  content: "►";             /* Agrega este carácter */
+  color: limegreen;       /* Lo cambia a este color */
+  margin-right: .25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: red;
+}
+
+.ejemploFirst-letter >
+p::first-letter {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.ejemploFirst-line >
+p::first-line {
+    text-decoration: dotted;
+    color: red;
+}
+
+.ejemploBefore >
+p::before {
+    font: sans-serif;
+    content: "(=>)";             /* Agrega este contenido */
+    color: limegreen;       /* Lo cambia a este color */
+}
+
+.ejemploAfter >
+p::after {
+    font: sans-serif;
+    content: "(<=)";             /* Agrega este contenido */
+    color: limegreen;       /* Lo cambia a este color */
+}

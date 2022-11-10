@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Presentación de Pseudoclases y Pseudoelementos</title>
+</head>
+<body>
+
+    <div class="header">
+        
+    </div>
+
+    <div class="contenido">
+        <h1>Pseudoclases y Pseudoelementos</h1>
+
+        <p>Son formas para identificar estilos específicos de nuestros elementos.</p>
+
+        <section class="pseudoclases">
+            <h2>Pseudoclases</h2>
+
+            <p>Permite estilizar estados del elemento.</p>
+
+            <div id="content">
+                <h3>:link</h3><br>
+                <p>Esto es un ejemplo de <a href="#" class="ejemploLink" >:link</a></p>
+                <img src="images/link.png" alt="">
+                <img src="images/linkcss.png" alt="">
+
+            </div>
+
+            <div id="content">
+                <h3>:visited</h3><br>
+                <p>Esto es un ejemplo de <a href="#" class="ejemploVisited">:visited</a></p>
+                <img src="images/visited.png" alt="">
+                <img src="images/visitedcss.png" alt="">
+
+            </div>
+
+            <div id="content">
+                <h3>:active</h3><br>
+                <p>Esto es un ejemplo de <a href="#" class="ejemploActive">:active</a></p>
+                <img src="images/active.png" alt="">
+                <img src="images/activecss.png" alt="">
+            </div>
+
+            <div id="content">
+                <h3>:focus</h3><br>
+                <p>Esto es un ejemplo de <a href="#" class="ejemploFocus">:focus</a></p>
+                <img src="images/focus.png" alt="">
+                <img src="images/focuscss.png" alt="">
+            </div>
+
+            <div id="content">
+                <h3>:checked</h3><br>
+                <p>Ejemplo de :checked</p>
+                <div>
+                    <input type="radio" name="my-input" id="yes">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="my-input" id="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="my-checkbox" id="opt-in">
+                    <label for="opt-in">Check me!</label>
+                </div><br>
+
+                <select name="my-select" id="fruit">
+                    <option value="opt1">Apples</option>
+                    <option value="opt2">Grapes</option>
+                    <option value="opt3">Pears</option>
+                </select>
+
+                <img src="images/checked.png" alt="">
+                <img src="images/checkedcss.png" alt="">
+
+            </div>
+
+            <div id="content">
+                <h3>:hover</h3><br>
+                <p>Esto es un ejemplo de <a href="#" class="ejemploHover">:hover</a></p>
+                <img src="images/hover.png" alt="">
+                <img src="images/hovercss.png" alt="">
+            </div>
+
+            <div id="content">
+                <h3>:target</h3><br>
+                <p>Esto es un ejemplo de :target </p><br>
+                <h3>Tabla de contenido</h3><br>
+
+                <ol>
+                    <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                    <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                    <li><a href="#nowhere">Este enlace no va a ninguna parte,
+                    porque el objetivo no existe.</a></li>
+                </ol><br>
+
+                <h3>Mi artículo divertido</h3><br>
+                <p id="p1">Puede orientar elegir como blanco <i>este párrafo</i> utilizando un
+                fragmento de URL. ¡Haz clic en el enlace de arriba para probar!</p>
+                <p id="p2">Este es <i>otro párrafo</i>, también accesible
+                desde los enlaces de arriba. ¿No es encantador?</p>
+
+                <img src="images/target.png" alt="">
+                <img src="images/targetcss.png" alt="">
+
+            </div>
+
+            <div id="content">
+                <h3>:lang()</h3><br>
+                <p>Esto es un ejemplo de :lang()</p>
+                <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+
+                <img src="images/lang.png" alt="">
+                <img src="images/langcss.png" alt="">
+            </div>
+
+            <div id="content">
+                <h2>Menciones extras:</h2><br>
+                <ul>
+                    <li>:nth-child</li>
+                    <li>:first-child</li>
+                    <li>:last-child</li>
+                    <li>:only-child</li>
+                    <li>:nth-of-type</li>
+                    <li>:first-of-type</li>
+                    <li>:last-of-type</li>
+                    <li>:only-of-type</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="pseudoelementos">
+            <h2>Pseudoelementos</h2><br>
+            <p>A diferencia de las pseudoclases, los pseudoelementos NO identifican un estado, sino que identifican puntos o lugares concretos dentro de un elemento HTML.</p>
+
+            <div class="ejemploFirst-letter" id="content">
+                <h3>Texto de ejemplo para ::first-letter</h3><br>
+                <p>Lorem ipsum dolor sit amet</p>
+
+                <img src="images/first-letter.png" alt="">
+                <img src="images/first-lettercss.png" alt="">
+            </div>
+
+            <div class="ejemploFirst-line" id="content">
+                <h3>Párrafos de ejemplo para ::first-line</h3><br>
+                <p>
+                    Primera línea de ejemplo <br>
+                    Segunda línea de ejemplo. <br>
+                    Tercera línea de ejemplo.
+                </p>
+
+                <img src="images/first-line.png" alt="">
+                <img src="images/first-lettercss.png" alt="">
+            </div>
+
+            <div class="ejemploBefore" id="content">
+                <h3>Texto de ejemplo para ::before</h3><br>
+                <p>Texto de ejemplo</p>
+
+                <img src="images/before.png" alt="">
+                <img src="images/beforecss.png" alt="">
+            </div>
+
+            <div class="ejemploAfter" id="content">
+                <h3>Texto de ejemplo para ::after</h3><br>
+                <p>Texto de ejemplo</p>
+                
+                <img src="images/before.png" alt="">
+                <img src="images/aftercss.png" alt="">
+            </div>
+
+        </section>
+    </div>
+    
+</body>
+</html>
